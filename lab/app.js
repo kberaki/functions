@@ -63,8 +63,9 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let multiNum = multiply (multiplayNum1[0], c)
 let finalSum = a + ' and ' + b + ' and ' + c + ' sum to ' + sumNum[0] + '.'
 let finalMulti = 'The product of ' + a +' and ' + b + ' and ' + c + ' is '  + multiNum[0] + '.'
-let result = [sumNum[0], multiNum[0], finalSum, finalMulti]
-console.log(result)
+
+//let result = [sumNum[0], multiNum[0], finalSum, finalMulti]
+//console.log(result)
  
 return [sumNum[0], multiNum[0], finalSum, finalMulti] 
 
@@ -89,12 +90,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+let sumArr1 = sum(sumArr[0],sumArr[1])
+let sumArr2 = sum(sumArr1[0], sumArr[2])
+let finalArr = sumArr[0] +','+ sumArr[1] +','+ sumArr[2] + ' was passed in as an array of numbers, ' +'and ' + sumArr2[0] + ' is their sum.'
+let result2 = [sumArr2[0], finalArr]
+console.log(result2)
+return [sumArr2[0], finalArr]
 }
-
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -110,11 +115,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+let multArr1 = multiply(multArr[0],multArr[1])
+let multArr2 = multiply(multArr1[0], multArr[2])
+let finalMulArray = 'The numbers '+ multArr[0] +',' + multArr[1] +',' + multArr[2] + ' have a product of 24.'
+let result5 = [multArr2[0], finalMulArray]
+console.log(result5)
+return [multArr2[0], finalMulArray]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
